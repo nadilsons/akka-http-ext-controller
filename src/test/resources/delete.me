@@ -1,0 +1,14 @@
+akka {
+	loglevel = "DEBUG"
+	stdout-loglevel = "DEBUG"
+
+	http {
+		server { 
+			verbose-error-messages = on 
+		}
+
+		parsing {
+			error-logging-verbosity = full
+		}
+	}
+}
