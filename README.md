@@ -25,14 +25,14 @@ public class UserController {
 
 	@GET
 	@Path("users/:id/details")
-	public Route simpleGet(String id) {
+	public Route details(String id) {
 		// getting pathParams
 		return Directives.complete("Showing details for user " + id);
 	}
 
 	@POST
 	@Path("users")
-	public Route simpleGet(User user) {
+	public Route save(User user) {
 		// parsing json body
 		return Directives.complete("Saving user " + user.getName());
 	}
