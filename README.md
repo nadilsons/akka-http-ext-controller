@@ -44,7 +44,7 @@ public class UserController {
 system = ActorSystem.create();
 Routes.init(system, 8080, new UserController());
 ```
-   Please note that all controllers must be declared at once.
+   Please note that all controllers must be declared at once (In the same `Routes.init` call).
 
 4) Done! You can access your controller at [http://localhost:8080/users/1/details](http://localhost:8080/users/1/details)
 
